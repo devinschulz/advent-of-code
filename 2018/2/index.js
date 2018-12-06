@@ -7,17 +7,15 @@ const input = fs
 
 // Part 1
 const getChecksum = input => {
-  const countLetters = str =>
-    str.split('').reduce((acc, char) => {
-      if (acc.hasOwnProperty(char)) {
-        acc[char]++
-      } else {
-        acc[char] = 1
-      }
-      return acc
-    }, {})
-
-  const counter = input.reduce(
+  const countLetters = str => {
+    const result = {}
+    for (let i = 0; i < str.length; i++) {
+      let key = str.charAt(i)
+      result[key] = (result[key] || 0) + 1
+    }
+    return result
+  }
+  const { twos, threes } = input.reduce(
     (acc, current) => {
       const count = Object.values(countLetters(current))
       if (count.includes(2)) {
@@ -30,7 +28,7 @@ const getChecksum = input => {
     },
     { twos: 0, threes: 0 }
   )
-  return counter.twos * counter.threes
+  return twos * threes
 }
 
 console.log(getChecksum(input))
