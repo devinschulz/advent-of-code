@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/devinschulz/advent-of-code#readme",
   "devDependencies": {
-    "prettier": "^1.15.3"
+    "prettier": "^2.5.0"
+  },
+  "dependencies": {
+    "fp-ts": "^2.11.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
   }
 }
