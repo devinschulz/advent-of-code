@@ -13,10 +13,7 @@ const input = pipe(
   RA.map(Number),
   RA.toArray,
   A.reduce(
-    pipe(
-      Array.from({ length: 9 }),
-      A.map(() => 0)
-    ),
+    A.makeBy(9, () => 0),
     (acc, x) => {
       acc[x] = (acc[x] || 0) + 1
       return acc
