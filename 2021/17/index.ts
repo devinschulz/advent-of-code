@@ -44,5 +44,5 @@ const calculate = pipe(
 const part1 = pipe(calculate, NEA.max(N.Ord))
 const part2 = pipe(calculate, A.size)
 
-console.log('part 1', part1) // 5460
-console.log('part 2', part2) // 3618
+console.log('part 1', part1)
+console.log('part 2', part2)
