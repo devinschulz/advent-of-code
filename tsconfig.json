@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "inlineSources": true
+    "inlineSources": true,
+    "plugins": [{
+      "name": "typescript-deno-plugin",
+      "enabled": true
+    }]
   }
 }
