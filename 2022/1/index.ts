@@ -13,12 +13,12 @@ const result = text
   )
   .sort();
 
-Deno.test("Part 1", () => {
+Deno.test("Day 1 part 1", () => {
   const part1 = result.at(-1);
   assert.assertEquals(part1, 72017);
 });
 
-Deno.test("Part 2", () => {
+Deno.test("Day 1 part 2", () => {
   const part2 = result.slice(-3).reduce((acc, current) => acc + current, 0);
   assert.assertEquals(part2, 212520);
 });

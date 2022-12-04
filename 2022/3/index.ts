@@ -37,10 +37,10 @@ const part2 = Array.from(
   .map((x) => find(...x))
   .reduce(score, 0);
 
-Deno.test("Part 1", () => {
+Deno.test("Day 3 part 1", () => {
   assert.equal(part1, 8039);
 });
 
-Deno.test("Part 2", () => {
+Deno.test("Day 3 part 2", () => {
   assert.equal(part2, 2510);
 });
