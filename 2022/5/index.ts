@@ -29,9 +29,9 @@ const part1 = data.flatMap((x) => x.at(-1)).join("");
 const part2 = data2.flatMap((x) => x.at(-1)).join("");
 
 Deno.test("Day 5 part 1", () => {
-  assert.assertEquals(part1, "LJSVLTWQM");
+  assert.assertEquals(part1, "BRQWDBBJM");
 });
 
 Deno.test("Day 5 part 2", () => {
-  assert.assertEquals(part2, "BRQWDBBJM");
+  assert.assertEquals(part2, "LJSVLTWQM");
 });
