@@ -1,4 +1,4 @@
-import { path, assert } from "../deps.ts";
+import { assert, path } from "../deps.ts";
 
 const __dirname = path.dirname(path.fromFileUrl(import.meta.url));
 const text = await Deno.readTextFile(path.join(__dirname, "./input.txt"));

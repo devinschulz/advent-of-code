@@ -102,9 +102,9 @@ const part2 = text.split("\n").reduce<number>((acc, current) => {
 }, 0);
 
 Deno.test("Day 2 part 1", () => {
-  assert.equal(part1, 10994);
+  assert.assertEquals(part1, 10994);
 });
 
 Deno.test("Day 2 part 2", () => {
-  assert.equal(part2, 12526);
+  assert.assertEquals(part2, 12526);
 });

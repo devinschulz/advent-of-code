@@ -38,9 +38,9 @@ const part2 = Array.from(
   .reduce(score, 0);
 
 Deno.test("Day 3 part 1", () => {
-  assert.equal(part1, 8039);
+  assert.assertEquals(part1, 8039);
 });
 
 Deno.test("Day 3 part 2", () => {
-  assert.equal(part2, 2510);
+  assert.assertEquals(part2, 2510);
 });
