@@ -18,6 +18,5 @@ Deno.test("Day 6 part 1", () => {
 });
 
 Deno.test("Day 6 part 3", () => {
-  const part2 = fn(text, 14);
-  assert.assertEquals(part2, 3837);
+  assert.assertEquals(fn(text, 14), 3837);
 });
