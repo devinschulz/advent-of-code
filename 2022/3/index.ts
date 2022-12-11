@@ -1,4 +1,5 @@
 import { assert, path } from "../deps.ts";
+import { groupBy } from "../utils.ts";
 
 const __dirname = path.dirname(path.fromFileUrl(import.meta.url));
 const text = await Deno.readTextFile(path.join(__dirname, "./input.txt"));
@@ -28,12 +29,7 @@ const part1 = formatted
   })
   .reduce(score, 0);
 
-const SIZE = 3;
-
-const part2 = Array.from(
-  { length: Math.ceil(formatted.length / SIZE) },
-  (_v, i) => formatted.slice(i * SIZE, i * SIZE + SIZE),
-)
+const part2 = groupBy(formatted, 3)
   .map((x) => find(...x))
   .reduce(score, 0);
 
