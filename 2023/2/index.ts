@@ -25,7 +25,7 @@ interface Games {
   games: Game[];
 }
 
-const MAX_COLORS = { red: 12, green: 13, blue: 14 } satisfies Game;
+const MAX_COLORS: Game = { red: 12, green: 13, blue: 14 };
 
 const parseGame = (str: string): Game =>
   pipe(
