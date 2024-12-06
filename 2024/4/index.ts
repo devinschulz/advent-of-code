@@ -162,12 +162,12 @@ SAXAMASAAA
 MAMMMXMMMM
 MXMXAXMASX`;
 
-Deno.test("2024/2 part one", () => {
+Deno.test("2024/4 part one", () => {
   assertEquals(partOne(testInput), 18);
   assertEquals(partOne(data), 2514);
 });
 
-Deno.test("2024/2 part two", () => {
+Deno.test("2024/4 part two", () => {
   assertEquals(partTwo(testInput), 9);
   assertEquals(partTwo(data), 1888);
 });

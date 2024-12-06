@@ -46,13 +46,13 @@ function partTwo(data: string) {
     .reduce((acc, cur) => acc + cur, 0);
 }
 
-Deno.test("2024/2 part one", () => {
+Deno.test("2024/3 part one", () => {
   const testInput = `xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))`;
   assertEquals(partOne(testInput), 161);
   assertEquals(partOne(data), 183380722);
 });
 
-Deno.test("2024/2 part two", () => {
+Deno.test("2024/3 part two", () => {
   const testInput = `xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))`;
   assertEquals(partTwo(testInput), 48);
   assertEquals(partTwo(data), 83546082);
